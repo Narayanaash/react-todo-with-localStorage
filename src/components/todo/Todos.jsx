@@ -6,7 +6,13 @@ import List from './List'
 
 class Todos extends React.Component {
     state = {
-        items: [],
+        items: [
+            {
+                id: uuid(),
+                item: '',
+                done: false,
+            }
+        ],
     }
     
     componentDidMount() {
