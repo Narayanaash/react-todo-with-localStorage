@@ -6,19 +6,15 @@ import List from './List'
 
 class Todos extends React.Component {
     state = {
-        items: [
-            {
-                id: uuid(),
-                item: '',
-                done: false,
-            }
-        ],
+        items: [],
     }
     
-//     componentDidMount() {
-//         const items = JSON.parse(localStorage.getItem('items'))
-//         this.setState({items:items})
-//       }
+    componentDidMount() {
+        const items = JSON.parse(localStorage.getItem('items'))
+        if (items) {
+            this.setState({items:items})
+        }
+      }
 
     removeItem = id => {
         const { items } = this.state
