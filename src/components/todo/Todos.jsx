@@ -15,10 +15,10 @@ class Todos extends React.Component {
         ],
     }
     
-    componentDidMount() {
-        const items = JSON.parse(localStorage.getItem('items'))
-        this.setState({items:items})
-      }
+//     componentDidMount() {
+//         const items = JSON.parse(localStorage.getItem('items'))
+//         this.setState({items:items})
+//       }
 
     removeItem = id => {
         const { items } = this.state
