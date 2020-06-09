@@ -1,4 +1,4 @@
-##Just a simple react todo app...in this i used localStorage to store todos items instead api
+## Just a simple react todo app...in this i used localStorage to store todos items instead api
 
 Active link: https://xenodochial-yalow-204552.netlify.app/
 
